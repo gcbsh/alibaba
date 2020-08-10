@@ -32,9 +32,9 @@
 # a["sex"] = "男"  #没有则插入,有则修改
 # a.update(学历 = "本科") #插入一条数据
 # del a["学历"]     #删除一条数据
-# print(a.get("age"))  #取值
+print(a)  #取值
 
-name = (input("请输入您的姓名:"))
-age = (input("请输入您的年龄:"))
-a = {"name":name,"age":age}
-print(a)
+# name = (input("请输入您的姓名:"))
+# age = (input("请输入您的年龄:"))
+# a = {"name":name,"age":age}
+# print(a)
