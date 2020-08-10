@@ -55,19 +55,23 @@
 
 
 #模拟红绿灯,30次红灯,35次绿灯,3次黄灯
-# while True:
-#     t = 30
-#     for h in range(30):
-#         print("红灯还有",t,"秒结束")
-#         t-=1
-#     t = 35
-#     for h in range(35):
-#         print("绿灯还有",t,"秒结束")
-#         t-=1
-#     t = 3
-#     for h in range(3):
-#         print("黄灯还有",t,"秒结束")
-#         t-=1
+import time
+while True:
+    t = 30
+    for h in range(30):
+        time.sleep(1)
+        print("红灯还有",t,"秒结束")
+        t-=1
+    t = 35
+    for h in range(35):
+        time.sleep(1)
+        print("绿灯还有",t,"秒结束")
+        t-=1
+    t = 3
+    for h in range(3):
+        time.sleep(1)
+        print("黄灯还有",t,"秒结束")
+        t-=1
 
 
 #实现一个注册功能
@@ -83,19 +87,19 @@
 
 
 
-t = True
-while t:
-    user = input("账号:")
-    if user[0] in "qwertyuiopasdfghjklzxcvbnm" and 5<=len(user)<=8:
-        while t:
-            password = input("密码:")
-            if 6<=len(password)<=12:
-                print({user:password})
-                t = False
-            else:
-                print("密码长度在6-12之间")
-                t = True
-        t = False
-    else:
-        print("账号必须以小写字母开头且长度在5-8之间")
-        t = True
+# t = True
+# while t:
+#     user = input("账号:")
+#     if user[0] in "qwertyuiopasdfghjklzxcvbnm" and 5<=len(user)<=8:
+#         while t:
+#             password = input("密码:")
+#             if 6<=len(password)<=12:
+#                 print({user:password})
+#                 t = False
+#             else:
+#                 print("密码长度在6-12之间")
+#                 t = True
+#         t = False
+#     else:
+#         print("账号必须以小写字母开头且长度在5-8之间")
+#         t = True
