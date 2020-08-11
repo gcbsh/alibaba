@@ -55,23 +55,23 @@
 
 
 #模拟红绿灯,30次红灯,35次绿灯,3次黄灯
-import time
-while True:
-    t = 30
-    for h in range(30):
-        time.sleep(1)
-        print("红灯还有",t,"秒结束")
-        t-=1
-    t = 35
-    for h in range(35):
-        time.sleep(1)
-        print("绿灯还有",t,"秒结束")
-        t-=1
-    t = 3
-    for h in range(3):
-        time.sleep(1)
-        print("黄灯还有",t,"秒结束")
-        t-=1
+# import time
+# while True:
+#     t = 30
+#     for h in range(30):
+#         time.sleep(1)
+#         print("红灯还有",t,"秒结束")
+#         t-=1
+#     t = 35
+#     for h in range(35):
+#         time.sleep(1)
+#         print("绿灯还有",t,"秒结束")
+#         t-=1
+#     t = 3
+#     for h in range(3):
+#         time.sleep(1)
+#         print("黄灯还有",t,"秒结束")
+#         t-=1
 
 
 #实现一个注册功能
